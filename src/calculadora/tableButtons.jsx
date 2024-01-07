@@ -1,11 +1,6 @@
 import CalculatorButton from "./calculatorButton";
 
-export default function TableButtons({
-  addText,
-  deleteText,
-  setValue,
-  resolve,
-}) {
+export default function TableButtons({ value, setValue, solve }) {
   return (
     <table id="tableButtons">
       <tbody>
@@ -76,10 +71,18 @@ export default function TableButtons({
             <CalculatorButton numero="<" callback={deleteText} />
           </td>
           <td>
-            <CalculatorButton numero="=" callback={resolve} />
+            <CalculatorButton numero="=" callback={solve} />
           </td>
         </tr>
       </tbody>
     </table>
   );
+
+  function addText(text) {
+    setValue(value + text);
+  }
+
+  function deleteText() {
+    setValue(value.slice(0, -1));
+  }
 }

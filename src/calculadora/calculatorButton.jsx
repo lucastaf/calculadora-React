@@ -1,8 +1,6 @@
 export default function CalculatorButton({ numero, callback}) {
   return (
-    <div id = "button">
-      <button onClick={buttonClick}> {numero} </button>
-    </div>
+      <button id = "button" onClick={buttonClick}> {numero} </button>
   );
 
   function buttonClick(){
@@ -12,5 +10,7 @@ export default function CalculatorButton({ numero, callback}) {
       callback(numero)
     }
   }
+
+  
 }
 

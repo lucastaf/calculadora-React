@@ -22,16 +22,29 @@ h1{
     width: 75%;
 }
 
+#textArea{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 #result{
-    box-sizing: border-box;
+    width: 100%;
     border-radius: 5%;
     font-size: 3rem ;
     background-color: rgb(172, 252, 255);
-    margin: 20px;
     height: 1.5em;
 }
 
-button{
+#save{
+    float:right;
+    width: 4em;
+    border-radius: 2%;
+    background-color: rgba(74, 150, 231, 0.927);
+    border-color: rgb(83, 160, 242);
+}
+
+
+#button{
     background-color: rgba(74, 150, 231, 0.927);
     border-color: rgb(83, 160, 242);
     border-width: 0.2em;
@@ -39,4 +52,12 @@ button{
     block-size: 3em;
     border-radius: 100%;
     font-size: 1.5rem;
+}
+
+#setButton{
+    background-color: aqua;
+}
+
+#deleteButton{
+    background-color: red;
 }
