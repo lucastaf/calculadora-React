@@ -1,0 +1,42 @@
+#body {
+ text-align: center;
+ font-family:'Poppins', sans-serif;
+}
+
+
+h1{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#calculatorArea{
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+#calculatorArea > *{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+#result{
+    box-sizing: border-box;
+    border-radius: 5%;
+    font-size: 3rem ;
+    background-color: rgb(172, 252, 255);
+    margin: 20px;
+    height: 1.5em;
+}
+
+button{
+    background-color: rgba(74, 150, 231, 0.927);
+    border-color: rgb(83, 160, 242);
+    border-width: 0.2em;
+    inline-size: 3em;
+    block-size: 3em;
+    border-radius: 100%;
+    font-size: 1.5rem;
+}
