@@ -1,63 +1,94 @@
 #body {
- text-align: center;
- font-family:'Poppins', sans-serif;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-
-h1{
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+h1 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
-#calculatorArea{
-    margin: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
+#calculatorArea {
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border-radius: 5%;
+  background-color: #b8f0fe;
 }
 
-#calculatorArea > *{
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+#calculatorArea > * {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
-#textArea{
-    margin-top: 30px;
-    margin-bottom: 30px;
+#textArea {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-#result{
-    width: 100%;
-    border-radius: 5%;
-    font-size: 3rem ;
-    background-color: rgb(172, 252, 255);
-    height: 1.5em;
+#result {
+  width: 100%;
+  border-radius: 5%;
+  font-size: 3rem;
+  background-color: #6df3f8;
+  height: 1.5em;
 }
 
-#save{
-    float:right;
-    width: 4em;
-    border-radius: 2%;
-    background-color: rgba(74, 150, 231, 0.927);
-    border-color: rgb(83, 160, 242);
+#save {
+  float: right;
+  width: 4em;
+  border-radius: 2%;
+  background-color: rgba(74, 150, 231, 0.927);
+  border-color: rgb(83, 160, 242);
 }
 
-
-#button{
-    background-color: rgba(74, 150, 231, 0.927);
-    border-color: rgb(83, 160, 242);
-    border-width: 0.2em;
-    inline-size: 3em;
-    block-size: 3em;
-    border-radius: 100%;
-    font-size: 1.5rem;
+#button {
+  background-color: rgba(74, 150, 231, 0.927);
+  border-color: rgb(83, 160, 242);
+  border-width: 0.2em;
+  inline-size: 3em;
+  block-size: 3em;
+  border-radius: 100%;
+  font-size: 1.5rem;
 }
 
-#setButton{
-    background-color: aqua;
+#itensList {
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-#deleteButton{
-    background-color: red;
+#listRow {
+  border: 2pt solid rgba(74, 150, 231, 0.927);
+}
+
+#listRow > * {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#setButton,
+#deleteButton, #deleteAll {
+  block-size: 2em;
+  color: white;
+  width: 5em;
+  border-radius: 2%;
+}
+
+#setButton {
+  background-color: rgba(10, 126, 249, 0.927);
+  border-color: rgb(83, 160, 242);
+}
+
+#deleteButton, #deleteAll {
+  background-color: rgba(238, 31, 31, 0.927);
+  border-color: rgb(242, 83, 83);
+}
+
+#deleteAll{
+    width: 10em;
+    margin-bottom: 10px;
+
 }

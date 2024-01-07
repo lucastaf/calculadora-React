@@ -68,7 +68,7 @@ export default function TableButtons({ value, setValue, solve }) {
             <CalculatorButton numero="." callback={addText} />
           </td>
           <td>
-            <CalculatorButton numero="<" callback={deleteText} />
+            <CalculatorButton numero="⇐" callback={deleteText} />
           </td>
           <td>
             <CalculatorButton numero="=" callback={solve} />

@@ -24,14 +24,14 @@ export default function Calculadora() {
         <br />
       </fieldset>
 
-      <SavedItensList setItens={setItens} setValue={setValue} itens={itens} />
+      <SavedItensList value={value} setItens={setItens} setValue={setValue} itens={itens} />
     </>
   );
 
   function addValue() {
     let result = solve();
     if (result == "" || result == "Error") return;
-    itens.push(result);
+    itens.unshift(result);
     setItens(itens);
     setValue("");
   }
