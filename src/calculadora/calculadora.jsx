@@ -1,7 +1,9 @@
 import { useState } from "react";
-import TableButtons from "./tableButtons";
-import SavedItensList from "./savedItensList";
-
+import CalculatorButtonsList from "./lists/CalculatorButtonsList";
+import SavedItensList from "./lists/SavedItensList";
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+ 
 export default function Calculadora() {
   const [value, setValue] = useState("");
   const [itens, setItens] = useState([]);
@@ -11,16 +13,16 @@ export default function Calculadora() {
       <fieldset id="calculatorArea">
         <h1> Calculadora </h1>
         <div id="textArea">
-          <input type="text" id="result" value={value} readOnly />
+          <TextField  type="text" id="result" value={value} readOnly />
           <br />
-          <button id="save" onClick={addValue}>
+          <Button id="save" onClick={addValue}>
             {" "}
             salvar{" "}
-          </button>
+          </Button>
           <br />
         </div>
 
-        <TableButtons value={value} setValue={setValue} solve={solve} />
+        <CalculatorButtonsList value={value} setValue={setValue} solve={solve} />
         <br />
       </fieldset>
 

@@ -1,12 +1,15 @@
-#body {
+
+body {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: roboto;
+  background-color: #16121d;
 }
 
-h1 {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+#body > h1, #calculatorArea > *{
+  color: #eaf6ec;
 }
+
+
 
 #calculatorArea {
   margin: 50px;
@@ -14,7 +17,8 @@ h1 {
   margin-right: auto;
   width: 500px;
   border-radius: 5%;
-  background-color: #b8f0fe;
+
+  background-color: rgb(22, 21, 26); 
 }
 
 #calculatorArea > * {
@@ -32,22 +36,22 @@ h1 {
   width: 100%;
   border-radius: 5%;
   font-size: 3rem;
-  background-color: #6df3f8;
+  background-color: #eaf6ec;
   height: 1.5em;
 }
 
 #save {
   float: right;
   width: 4em;
-  border-radius: 2%;
-  background-color: rgba(74, 150, 231, 0.927);
+  border-radius: 15%;
+  background-color: gray;
   border-color: rgb(83, 160, 242);
+  color: white;
 }
 
 #button {
   background-color: rgba(74, 150, 231, 0.927);
-  border-color: rgb(83, 160, 242);
-  border-width: 0.2em;
+  box-shadow: 2px 5px 5px #292d31;
   inline-size: 3em;
   block-size: 3em;
   border-radius: 100%;
@@ -55,6 +59,7 @@ h1 {
 }
 
 #itensList {
+  width: 250px;
   border-collapse: collapse;
   margin-right: auto;
   margin-left: auto;
@@ -62,18 +67,20 @@ h1 {
 
 #listRow {
   border: 2pt solid rgba(74, 150, 231, 0.927);
+  padding-top: auto;
 }
 
-#listRow > * {
-  padding: 10px;
+#listCell {
   font-size: 1.5rem;
+  color: #eaf6ec;
 }
 
 #setButton,
 #deleteButton, #deleteAll {
-  block-size: 2em;
-  color: white;
-  width: 5em;
+  margin-bottom: auto;
+  block-size: 1.5em;
+  color: #eaf6ec;
+  width: 1.5em;
   border-radius: 2%;
 }
 
@@ -90,5 +97,4 @@ h1 {
 #deleteAll{
     width: 10em;
     margin-bottom: 10px;
-
 }

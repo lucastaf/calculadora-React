@@ -1,6 +1,8 @@
+import Button from '@mui/material/Button';
+
 export default function CalculatorButton({ numero, callback}) {
   return (
-      <button id = "button" onClick={buttonClick}> {numero} </button>
+      <Button id = "button" variant="contained" onClick={buttonClick}> {numero} </Button>
   );
 
   function buttonClick(){

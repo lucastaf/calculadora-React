@@ -1,6 +1,7 @@
-import CalculatorButton from "./calculatorButton";
+import CalculatorButton from "./Buttons/calculatorButton";
 
-export default function TableButtons({ value, setValue, solve }) {
+
+export default function CalculatorButtonsList({ value, setValue, solve }) {
   return (
     <table id="tableButtons">
       <tbody>
